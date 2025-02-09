@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Gestão Acadêmica</title>
+    <link rel="icon" href="Imagens/logo_ifrn.png" type="icon">
+</head>
+<body>
+    
+<center>
+<table border="0">
+
+<tr style="background-color: rgb(9, 172, 17);">  <th>SISTEMA DE GESTÃO ACADÊMICA</th></tr>
+
+<tr> <td><img src="/" width="550" height="110">    </td>  </tr>
+<tr style="background-color: rgb(11, 158, 50);"> <th>MANUNTENÇÃO DO USUÁRIO DO SISTEMA INTERNO</th></tr>
+ <form name="formulario" action="scripts/teste.php" method="post">
+   
+   
+   
+   
+    <table cellspacing="3" cellpadding="5" style="text-align:left">
+
+    <tr><th>Login</th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th><input type="text" nome="Login" maxlength="20" size="20"></th></tr>
+    <tr><th>Senha</th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th><input type="text" nome="Senha" maxlength="20" size="20"></th></tr>
+    <tr><th>Status</th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th><select id="options" name="options">
+    <option value="opcao1">ATIVO</option>
+    <option value="opcao2">INATIVO</option></th></tr>
+    <tr><th>Tipo</th>  <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th>  <th><input type="radio" name="olimpiada" value="1"> Técnico
+        <input type="radio" name="olimpiada" value="2"> Professor
+        <input type="radio" name="olimpiada" value="3"> Aluno</th></tr>
+        <tr><th>Data de Criação></th><th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th><input type="date" id="dataCriacao" ></th></tr>  
+        <tr><th>Perfil</th>  <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th>  <th>
+            <input type="radio" name="perfil" value="1"> Convidado
+            <input type="radio" name="perfil" value="2"> Adiminstrador</th></tr>
+            <tr><th>Observações</th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th><textarea name="area_texto" rows="10" cols="40" maxlength="300" id=""></textarea></th></tr>
+        <tr><th>Módulos</th>  <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th> <th></th>  <th>
+            <input type="checkbox" name="modulos" value="1"> Compras
+            <input type="checkbox" name="modulos" value="2"> Biblioteca
+            <input type="checkbox" name="modulos" value="3"> Acadêmico
+            <br>
+            <input type="checkbox" name="modulos" value="4"> Documentação
+            <input type="checkbox" name="modulos" value="5"> Recursos Humanos
+        </th></tr>
+        </select>
+    </th>
+    </tr>
+</table><p></p>
+<input type="submit" name="cadastro" value="Cadastro"> 
+<input type="reset" name="cadastro" value="Excluir">
+</form>
+</table>
+</center>
+</body>
+</html>
